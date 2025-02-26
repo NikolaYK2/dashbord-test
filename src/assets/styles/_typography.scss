@@ -1,0 +1,25 @@
+@use "sass:math";
+
+@function to-rem($size) {
+  @return math.div($size, 16) * 1rem;
+}
+
+:root {
+  //FONT-SIZE ------------
+  --f-s-11px: #{clamp(to-rem(10), 5vw, to-rem(11))};
+  --f-s-12px: #{clamp(to-rem(11), 5vw, to-rem(12))};
+  --f-s-13px: #{clamp(to-rem(12), 5vw, to-rem(13))};
+  --f-s-14px: #{clamp(to-rem(13), 5vw, to-rem(14))};
+  --f-s-18px: #{clamp(to-rem(16), 5vw, to-rem(18))};
+  --f-s-26px: #{clamp(to-rem(20), 5vw, to-rem(26))};
+
+  //LINE-H ------------
+  --f-l-12px: 12.89px;
+  --f-l-14px: 14.06px;
+  --f-l-15px: 15.23px;
+  --f-l-16px: 16.41px;
+  --f-l-17px: 17.07px;
+  --f-l-21px: 21.94px;
+  --f-l-24px: 24.55px;
+  --f-l-39px: 39.69px;
+}
