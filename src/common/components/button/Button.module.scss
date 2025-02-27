@@ -1,0 +1,17 @@
+.link {
+  background: transparent;
+}
+
+.primary {
+  background: var(--color-medium-900);
+}
+
+.secondary {
+  background: var(--color-dark-700);
+}
+
+.primary,
+.secondary {
+  padding: 5px 0;
+  border-radius: 10px;
+}
