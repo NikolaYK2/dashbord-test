@@ -1,3 +1,3 @@
-export default function FinalizedTestId() {
-  return <div>Finalized</div>;
-}
+import { Finalize } from "@/features/ui/finalize";
+
+export default Finalize;
