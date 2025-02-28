@@ -1,4 +1,8 @@
-* {margin: 0; padding: 0; border: 0;}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 *,
 *::before,
@@ -11,7 +15,7 @@
   outline: none;
 }
 
-nav,footer,header,aside {
+nav, footer, header, aside {
   display: block;
 }
 
@@ -21,16 +25,16 @@ body {
   font-size: 100%;
   font-size: 14px;
   line-height: 1;
-  color: var(--color-light-100);
+  color: var(--color-dark-900);
   text-size-adjust: 100%;
 
-  background-color: var(--color-dark-900);
+  background-color: var(--color-light-500);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-input,button,textarea {
+input, button, textarea {
   font-family: inherit;
 }
 
@@ -51,18 +55,21 @@ a,
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 ul li {
   list-style: none;
 }
+
 // убирает элементы списка
 img {
   vertical-align: top;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: inherit;
   font-weight: 400;

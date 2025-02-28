@@ -1,10 +1,20 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import * as path from "path";
-// https://vite.dev/config/
+import { reactRouter } from "@react-router/dev/vite";
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [reactRouter()],
   resolve: {
-    alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
+    alias: [
+      { find: "@", replacement: path.resolve(__dirname, "src") },
+      { find: "@app", replacement: path.resolve(__dirname, "app") },
+    ],
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/assets/styles/index.scss";`,
+      },
+    },
   },
 });
