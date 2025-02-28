@@ -1,3 +1,3 @@
-export default function ResultTestId() {
-  return <div>Res</div>;
-}
+import { Results } from "@/features/ui/results";
+
+export default Results;
