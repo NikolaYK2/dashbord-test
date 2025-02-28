@@ -1,0 +1,17 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75px;
+
+  .icon {
+    transform: rotate(-90deg);
+
+  }
+}
+
+.btn,
+.icon {
+  color: var(--color-dark-900);
+
+}
