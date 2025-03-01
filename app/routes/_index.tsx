@@ -1,3 +1,3 @@
-import { Dashboard } from "@/features/ui/dashboard";
+import { Dashboard } from "@/features/dashboard/ui";
 
 export default Dashboard;
