@@ -9,9 +9,9 @@ type FindProps = {
   setSearchTerm: (value: string) => void;
   className?: string;
 };
-export const Find = ({ quantityTest = 0, searchTerm, setSearchTerm, className='' }: FindProps) => {
+export const Find = ({ quantityTest = 0, searchTerm, setSearchTerm, className = "" }: FindProps) => {
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.currentTarget.value);
+    setSearchTerm(e.currentTarget.value.toLowerCase());
   };
 
   return (
