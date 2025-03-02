@@ -1,12 +1,14 @@
 .find {
   margin: 4.2% 0 0 0;
 }
-.loading{
-display: flex;
+
+.loading {
+  display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
+
 .containerNotData {
   display: flex;
   flex-direction: column;
@@ -105,11 +107,11 @@ display: flex;
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 95px;
-        width: 100%;
+        width: 95px;
         color: var(--color-light-100);
         text-transform: capitalize;
         height: 30px;
+        margin: 0 0 0 auto;
       }
 
     }
@@ -119,6 +121,14 @@ display: flex;
   .hth,
   .btd {
     padding: 10px 15px;
+  }
+
+  .hth:first-child {
+    width: 425px;
+  }
+
+  .hth:last-child {
+    width: 95px;
   }
 }
 
